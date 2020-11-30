@@ -55,14 +55,15 @@ begin
       with u_Principal do
       begin
         Pessoa.RazaoSocial := ACBrConsultaCNPJ1.RazaoSocial;
-        Pessoa.Endereco := ACBrConsultaCNPJ1.Endereco;
-        Pessoa.Cidade := ACBrConsultaCNPJ1.Cidade;
-        Pessoa.UF := ACBrConsultaCNPJ1.UF;
-        Pessoa.Bairro := ACBrConsultaCNPJ1.Bairro;
-        Pessoa.CEP := ACBrConsultaCNPJ1.CEP;
-        Pessoa.Numero := ACBrConsultaCNPJ1.Numero;
-        Pessoa.Fantasia := ACBrConsultaCNPJ1.Fantasia;
-        Pessoa.Telefone :=  ACBrConsultaCNPJ1.Telefone;
+        Pessoa.Endereco    := ACBrConsultaCNPJ1.Endereco;
+        Pessoa.Cidade      := ACBrConsultaCNPJ1.Cidade;
+        Pessoa.UF          := ACBrConsultaCNPJ1.UF;
+        Pessoa.Bairro      := ACBrConsultaCNPJ1.Bairro;
+        Pessoa.CEP         := ACBrConsultaCNPJ1.CEP;
+        Pessoa.Numero      := ACBrConsultaCNPJ1.Numero;
+        Pessoa.Fantasia    := ACBrConsultaCNPJ1.Fantasia;
+        Pessoa.CNPJ        := ACBrConsultaCNPJ1.CNPJ;
+        Pessoa.Telefone    :=  ACBrConsultaCNPJ1.Telefone;
         if Pessoa.Telefone <> EmptyStr then
         begin
           Pessoa.Telefone := StringReplace(Pessoa.Telefone,'(','', [rfReplaceAll]);
